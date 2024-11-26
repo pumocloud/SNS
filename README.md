@@ -44,7 +44,7 @@ const sns = new AWS.SNS();
 app.post('/send-email', async (req, res) => {
   try {
     const { email, subject, message } = req.body;
-
+    
     // AWS SNS Publish
     await sns.publish({
       TopicArn: 'arn:aws:sns:ap-south-1:1234567890:My-S3-Alerts',	// Replace with your SNS TOpic ARN
@@ -121,7 +121,7 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-==================================================================================================================================================================================================================================================================================
+=========================================================================================================================================
 
 STEP 5: Create Required Index.html file with below content.
 
@@ -241,7 +241,7 @@ STEP 5: Create Required Index.html file with below content.
 </body>
 </html>
 
-=======================================================================================================================================================================
+=========================================================================================================================================
 
 STEP 6: NODE.JS WILL INTERPRET AND EXECUTE THE CODE IN THE server.js FILE. THIS IS A COMMON PATTERN FOR RUNNING SERVER-SIDE JAVASCRIPT APPLICATIONS.
 
